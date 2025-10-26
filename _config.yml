@@ -1,6 +1,6 @@
 resume_url: "Resume.pdf"
-author_name: "John Doe"
-url: johndoe.com
+author_name: "Jebel"
+url: jebel.com
 
 plugins:
   - jekyll-seo-tag
@@ -97,7 +97,7 @@ jekyll-minifier:
   simple_boolean_attributes: false # Default: false
   compress_js_templates: false # Default: false
   preserve_patterns: # Default: (empty)
-  uglifier_args: 
+  uglifier_args:
     harmony: true
 
 ############################################################
