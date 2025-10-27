@@ -3,7 +3,7 @@ name: Build and deploy this site to GitHub Pages
 on:
   push:
     branches:
-      - master 
+      - master
 
 jobs:
   github-pages:
@@ -16,10 +16,10 @@ jobs:
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
           restore-keys: |
             ${{ runner.os }}-gems-
-      - uses: jeffreytse/jekyll-deploy-action@v0.4.0
+      - uses: jeffreytse/jekyll-deploy-action@v0.6.0
         with:
-          provider: 'github'
+          provider: "github"
           token: ${{ secrets.GITHUB_TOKEN }}
-          jekyll_baseurl: 'dev-portfolio-blog'
+          jekyll_baseurl: "dev-portfolio-blog"
           pre_build_commands: pacman -S --noconfirm nodejs npm
-          branch: 'sample-site'
+          branch: "sample-site"
